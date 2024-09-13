@@ -1,19 +1,23 @@
-#Task Eleven - Image Hover Effect
-This repository contains two different implementations of an image hover effect. Both approaches cause an image to disappear when hovered over and reappear when the mouse leaves the area, but one is implemented using JavaScript and the other using CSS.
+# Task Eleven - Image Hover Effect
 
-Files in this repository:
--index.html - JavaScript-based solution
--style.html - CSS-based solution
-###1. index.html (JavaScript)
-This version uses JavaScript to control the hover behavior. When the mouse hovers over the image, the display property is set to none, hiding the image. Once the mouse leaves, the display property is set back to block, making the image reappear.
+This repository contains two different implementations of an image hover effect. Both approaches cause an image to disappear when hovered over and reappear when the mouse leaves the area, but one is implemented using **JavaScript** and the other using **CSS**.
 
-How to Run:
+## Files in this repository:
+- `index.html` - JavaScript-based solution
+- `style.html` - CSS-based solution
 
-Open the index.html file in any web browser.
-Hover over the image to make it disappear and move the mouse away to make it reappear.
+### 1. index.html (JavaScript)
 
+This version uses JavaScript to control the hover behavior. When the mouse hovers over the image, the `display` property is set to `none`, hiding the image. Once the mouse leaves, the `display` property is set back to `block`, making the image reappear.
 
+#### How to Run:
+
+- Open the `index.html` file in any web browser.
+- Hover over the image to make it disappear and move the mouse away to make it reappear.
+
+```html
 <img id="hoverImage" src="https://gratisography.com/wp-content/uploads/2024/03/gratisography-funflower-1170x780.jpg" alt="Sample Image" width="500" height="500">
+
 <script>
     const imgElement = document.getElementById('hoverImage');
     
@@ -24,18 +28,6 @@ Hover over the image to make it disappear and move the mouse away to make it rea
     imgElement.addEventListener('mouseout', function() {
         imgElement.style.display = 'block';
     });
-</script>
-###2. style.html (CSS)
-This version uses CSS only to achieve the same effect. When the mouse hovers over the image, the opacity property is set to 0, making the image invisible. Once the mouse leaves, the opacity returns to 1, making the image visible again.
+</script>'''
 
-How to Run:
 
-Open the style.html file in any web browser.
-Hover over the image to see it fade out, and move the mouse away to see it fade back in.
-css
-Copy code
-img:hover {
-    opacity: 0;
-}
-How to Use:
-Clone the repository
