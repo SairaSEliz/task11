@@ -15,7 +15,7 @@ This version uses JavaScript to control the hover behavior. When the mouse hover
 - Open the `index.html` file in any web browser.
 - Hover over the image to make it disappear and move the mouse away to make it reappear.
 
-```html
+
 <img id="hoverImage" src="https://gratisography.com/wp-content/uploads/2024/03/gratisography-funflower-1170x780.jpg" alt="Sample Image" width="500" height="500">
 
 <script>
@@ -28,6 +28,18 @@ This version uses JavaScript to control the hover behavior. When the mouse hover
     imgElement.addEventListener('mouseout', function() {
         imgElement.style.display = 'block';
     });
-</script>'''
+</script>
 
+### 2.style.html (CSS)
+This version uses CSS only to achieve the same effect. When the mouse hovers over the image, the `opacity` property is set to `0`, making the image invisible. Once the mouse leaves, the `opacity` returns to `1`, making the image visible again.
+
+#### How to Run:
+
+- Open the `style.html` file in any web browser.
+- Hover over the image to see it fade out, and move the mouse away to see it fade back in.
+
+```css
+img:hover {
+    opacity: 0;
+}
 
